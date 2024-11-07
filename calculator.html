@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <h1>Student GPA Calculator</h1>
+        <nav>
+            <ul>
+                <li><a href="teahome.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div id="calculator">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" placeholder="Enter Student Name" required>
+
+        <label for="subjectMark">Subject Marks (0-100):</label>
+        <input type="number" id="subjectMark" placeholder="Enter Marks" min="0" max="100">
+
+        <button id="addMarkButton">Add Mark</button>
+        <button id="calculateButton" style="display: none;">Calculate GPA</button>
+
+        <div id="marksCount" style="display: none;">
+            <h3>Marks Entered: <span id="countOutput">0</span></h3>
+        </div>
+
+        <div id="result" style="display: none;">
+            <h3>Student: <span id="nameOutput"></span></h3>
+            <div id="gradesOutput"></div>
+            <h3 id="gpaOutput"></h3>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Student Grade Calculator. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

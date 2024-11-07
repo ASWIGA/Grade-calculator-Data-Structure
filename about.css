@@ -1,0 +1,130 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f4f6f7, #e1e8ee);
+    padding-top: 80px; /* Space for fixed header */
+}
+
+/* Header styling */
+header {
+    background: #3498db; /* Solid background color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixed header */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2980b9; /* Darken on hover */
+}
+
+/* Grid container styling */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px; /* Max width for grid */
+}
+
+/* About page sections */
+.about, .features, .vision {
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #2c3e50;
+}
+
+.about {
+    background-color: #f9c5b3; /* Light coral */
+}
+
+.features {
+    background-color: #d1e7dd; /* Light green */
+}
+
+.vision {
+    background-color: #cfe2ff; /* Light blue */
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px; /* Increased font size */
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+p {
+    text-align: center;
+    font-size: 18px; /* Increased font size */
+    line-height: 1.6; /* Improved line height */
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features ul li {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #ffffff; /* White background for list items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s; /* Transition for list items */
+}
+
+.features ul li:hover {
+    background-color: #dcdde1; /* Change background on hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}

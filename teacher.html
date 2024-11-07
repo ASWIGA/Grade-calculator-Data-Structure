@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers Mark Entry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Teacher GPA Entry</h1>
+        <nav>
+            <ul>
+                <li><a href="teahome.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="calculator">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" required>
+
+        <h3>Enter Subject Details</h3>
+        <div id="subjectInputs">
+            <div>
+                <label for="subject1Name">Subject 1 Name:</label>
+                <input type="text" id="subject1Name" required>
+                <label for="subject1Marks">Marks:</label>
+                <input type="number" id="subject1Marks" min="0" max="100" required>
+            </div>
+            <div>
+                <label for="subject2Name">Subject 2 Name:</label>
+                <input type="text" id="subject2Name" required>
+                <label for="subject2Marks">Marks:</label>
+                <input type="number" id="subject2Marks" min="0" max="100" required>
+            </div>
+            <div>
+                <label for="subject3Name">Subject 3 Name:</label>
+                <input type="text" id="subject3Name" required>
+                <label for="subject3Marks">Marks:</label>
+                <input type="number" id="subject3Marks" min="0" max="100" required>
+            </div>
+            <div>
+                <label for="subject4Name">Subject 4 Name:</label>
+                <input type="text" id="subject4Name" required>
+                <label for="subject4Marks">Marks:</label>
+                <input type="number" id="subject4Marks" min="0" max="100" required>
+            </div>
+            <div>
+                <label for="subject5Name">Subject 5 Name:</label>
+                <input type="text" id="subject5Name" required>
+                <label for="subject5Marks">Marks:</label>
+                <input type="number" id="subject5Marks" min="0" max="100" required>
+            </div>
+            <div>
+                <label for="subject6Name">Subject 6 Name:</label>
+                <input type="text" id="subject6Name" required>
+                <label for="subject6Marks">Marks:</label>
+                <input type="number" id="subject6Marks" min="0" max="100" required>
+            </div>
+        </div>
+
+        <button id="calculateButton">Calculate GPA</button>
+        <button id="saveButton" style="display: none;">Save Student Details</button>
+
+        <div id="resultContainer" style="display: none;">
+            <h3>Results for <span id="resultStudentName"></span></h3>
+            <ul id="marksList"></ul>
+            <p>Total Marks: <span id="totalMarks"></span></p>
+            <p>GPA: <span id="gpa"></span></p>
+            <p>Grade: <span id="grade"></span></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Student Grade Calculator. All rights reserved.</p>
+    </footer>
+
+    <script src="teacher.js"></script>
+</body>
+</html>

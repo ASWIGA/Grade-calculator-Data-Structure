@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    padding-top: 120px; /* Ensures space for the fixed header */
+}
+
+/* Header */
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2980b9;
+}
+
+/* Calculator Section */
+#calculator {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Labels and Inputs */
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+    color: #34495e;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    font-size: 1em;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    padding: 12px;
+    width: 100%;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Results Section */
+#resultContainer {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px dashed #3498db;
+    border-radius: 8px;
+    background-color: #e9f7fa;
+}
+
+#marksList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#marksList li {
+    padding: 5px 0;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+#marksList li:last-child {
+    border-bottom: none;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+}

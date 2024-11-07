@@ -1,0 +1,159 @@
+/* General body styling */
+html, body {
+    height: 100%; /* Ensure body takes the full height of the viewport */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f4f6f7, #e1e8ee);
+    display: flex;
+    flex-direction: column; /* Flexbox for sticky footer */
+}
+
+/* Header styling */
+header {
+    background: #2980b9; /* Solid background color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1abc9c; /* Darken on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Main content area */
+main {
+    flex: 1; /* Allow main to grow and take available space */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Login container styling */
+.login-container {
+    max-width: 400px;
+    margin: 80px auto; /* Center the container */
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #e0e0e0);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Align label to the left */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #34495e;
+    font-weight: bold; /* Bold labels */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    transition: border 0.3s, box-shadow 0.3s; /* Transition effects */
+}
+
+.form-group input:focus {
+    border: 2px solid #1abc9c; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5); /* Add shadow on focus */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #3498db, #1abc9c); /* Gradient button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s; /* Transition for button hover */
+}
+
+button:hover {
+    background: linear-gradient(90deg, #2980b9, #16a085); /* Darken button on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+p {
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+a {
+    color: #3498db; /* Link color */
+    text-decoration: none;
+    font-weight: bold; /* Bold links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #34495e; /* Dark background for contrast */
+    color: white; /* Text color for better visibility */
+    text-align: center;
+    padding: 20px; /* Increased padding for better spacing */
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+    position: relative; /* Allows footer to be placed correctly */
+    bottom: 0; /* Keep it at the bottom */
+    margin-top: auto; /* Ensures it stays at the bottom in flex layout */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px; /* Font size adjustment for better readability */
+    color: #ffffff; /* Explicitly set text color to white */
+}
